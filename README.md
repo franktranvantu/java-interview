@@ -36,6 +36,31 @@
     - Using HashSet, LinkedHashSet...
 - Difference between String, String Builder, and String Buffer
 - Difference between HashSet and TreeSet
+- What is the output
+```
+List<String> names = new ArrayList<>();
+List<String> copyNames = Arrays.asList("Frank", "Henry", "Bean", "Kevin", "Oliver");
+names.addAll(copyNames);
+for (String name : names) {
+    if (name.equals("Bean")) {
+        names.remove(name);
+    } else {
+        System.out.println(name);
+    }
+}
+```
+How to fix it: use iterator or CopyOnWriteArrayList
+```
+Iterator<String> iterator = names.iterator(); // What haapen if copyNames.iterator() and how to resolve
+while (iterator.hasNext()) {
+    String name = iterator.next();
+    if (name.equals("Bean")) {
+        iterator.remove();
+    } else {
+        System.out.println(name);
+    }
+}
+```
 
 ## OOP
 - Why we need constructor inside an abstract class
