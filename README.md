@@ -72,10 +72,10 @@ while (iterator.hasNext()) {
 - Example
 ```
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
-  numbers
-      .stream()
-      .filter(number -> {
-          System.out.println(number);
-          return true;
-      })
+numbers
+  .stream()
+  .filter(number -> {
+      System.out.println(number);
+      return true;
+  })
   ```
