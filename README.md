@@ -79,3 +79,5 @@ numbers
       return true;
   })
   ```
+## Advance
+https://www.fullstack.cafe/blog/advanced-java-interview-questions
